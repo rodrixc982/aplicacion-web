@@ -1,21 +1,20 @@
-// Importamos vue-router
-import { createRouter, createWebHistory } from 'vue-router';
+//importamos vue-router
+import { createRouter, createWebHistory } from 'vue-router'
+//importamos los componentes de las vistas
+import Inicio from '../views/Inicio.vue'
+import Registro from '../views/Registro.vue'
 
-// Importamos los componentes de las vistas
-import Inicio from '../views/Inicio.vue';
-import Registro from '../views/Registro.vue';
-
-// Creamos las rutas
+//creamos las rutas
 const routes = [
-  { path: '/', name: 'Inicio', component: Inicio },
-  { path: '/registro', name: 'Registro', component: Registro },
-];
+    {path: '/', name: 'Inicio', component: Inicio},
+    {path: '/registro', name: 'Registro', component: Registro},
+]
 
-// Creamos el router
+//creamos el router
 const router = createRouter({
-  history: createWebHistory(),
-  routes,
-});
+    history: createWebHistory(),
+    routes,
+})
 
-// Exportamos el router
-export default router;
+//exportamos el router
+export default router
